@@ -1,0 +1,8 @@
+{
+    "require": {
+        "lyracom/rest-php-sdk": "4.0.2",
+        "drewm/mailchimp-api": "^2.5",
+        "setasign/fpdf": "1.8.*",
+        "setasign/fpdi": "^2.0"
+    }
+}

@@ -1,0 +1,130 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+span.error-message{ display: block; color: #d02c21;}
+.form-section-account label {display: block; max-width: max-content;}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: max-content;
+    background-color: black;
+    color: #fff;
+    border-radius: 6px;
+    padding: 5px 10px;
+    position: absolute;
+    z-index: 99999;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+    font-size: small;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+label.radio-label{
+    width: 90%;
+}
+
+.form-controls .radio{
+    position: relative;
+}
+
+.form-controls .radio label{
+    padding-left: 35px;
+}
+
+.form-controls .radio input {
+    position: absolute;
+    transform: translate(0%, -50%);
+    top: 35%;
+}
+
+/********   Accordion    *********/
+
+.informations_plan label {
+    display: block;
+    width: max-content;
+    padding: 8px 22px;
+    margin: 0 0 1px 0;
+    cursor: pointer;
+    background: #0a4b78;
+    border-radius: 3px;
+    color: #FFF;
+    transition: ease .5s;
+}
+.informations_plan label:hover {
+    background: #0a5b88;
+}
+.informations_plan .content {
+    background: #E2E5F6;
+    padding: 10px 25px;
+    border: 1px solid #A7A7A7;
+    margin: 0 0 1px 0;
+    border-radius: 3px;
+}
+
+.informations_plan input + .content {
+    display: none;
+}
+
+.informations_plan input:checked + .content {
+    display: block;
+}
+
+.informations_plan input {
+    display: none;
+}
+
+/*********  Form payzen **********/
+
+#paysubs_payment_anchor_form.kr-embedded,
+#paysubs_payment_anchor_form.kr-embedded .kr-payment-button{
+    width: 100%;
+}
+
+/*********  Logo Payzen **********/
+
+#paysubs_payment_anchor_form div.logo_payzen{
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#paysubs_payment_anchor_form div.logo_payzen img{
+    width: 275px;
+}
+
+span.container{
+    position: relative;
+    margin: 0 10px;
+}
+
+span.container span.payzen-secure{
+    fill: #3574b9;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}

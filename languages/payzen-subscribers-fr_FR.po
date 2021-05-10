@@ -1,0 +1,655 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: paysubs\n"
+"POT-Creation-Date: 2021-04-07 11:24+0200\n"
+"PO-Revision-Date: 2021-04-09 19:22+0200\n"
+"Last-Translator: \n"
+"Language-Team: OpenStudio\n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.3\n"
+"X-Poedit-Basepath: ../../..\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-KeywordsList: __;_e;esc_html_e\n"
+"X-Poedit-SearchPath-0: plugins/payzen-subscribers\n"
+"X-Poedit-SearchPath-1: themes/twentytwentyone/payzen-subscribers\n"
+
+#: plugins/payzen-subscribers/admin/class-payzen-subscribers-admin.php:109
+#: plugins/payzen-subscribers/admin/class-payzen-subscribers-admin.php:111
+msgid "Payzen subscribers"
+msgstr "Abonnements PayZen"
+
+#: plugins/payzen-subscribers/admin/class-payzen-subscribers-admin.php:120
+msgid "Payzen API Settings"
+msgstr "Paramètres de l'API PayZen"
+
+#: plugins/payzen-subscribers/admin/class-payzen-subscribers-admin.php:121
+msgid "API settings"
+msgstr "Paramètres de l'API"
+
+#: plugins/payzen-subscribers/admin/class-payzen-subscribers-admin.php:128
+#: plugins/payzen-subscribers/admin/class-payzen-subscribers-admin.php:130
+msgid "Subscriptions plans"
+msgstr "Abonnements"
+
+#: plugins/payzen-subscribers/admin/class-payzen-subscribers-admin.php:138
+#: plugins/payzen-subscribers/admin/class-payzen-subscribers-admin.php:140
+msgid "Add plan"
+msgstr "Ajouter un abonnement"
+
+#: plugins/payzen-subscribers/admin/class-payzen-subscribers-api-settings.php:25
+#: plugins/payzen-subscribers/admin/class-payzen-subscribers-api-settings.php:46
+msgid "REST API key"
+msgstr "Clé de l'API REST"
+
+#: plugins/payzen-subscribers/admin/class-payzen-subscribers-api-settings.php:33
+msgid "API mode"
+msgstr "Mode de l'API"
+
+#: plugins/payzen-subscribers/admin/class-payzen-subscribers-api-settings.php:61
+msgid "Client javaScript key"
+msgstr ""
+
+#: plugins/payzen-subscribers/admin/class-payzen-subscribers-api-settings.php:68
+#: plugins/payzen-subscribers/admin/class-payzen-subscribers-api-settings.php:87
+#: plugins/payzen-subscribers/admin/class-payzen-subscribers-api-settings.php:100
+msgid "API key"
+msgstr "Clé de l'API"
+
+#: plugins/payzen-subscribers/admin/class-payzen-subscribers-api-settings.php:80
+msgid "SHA-256 keys"
+msgstr "Clés SHA-256"
+
+#: plugins/payzen-subscribers/admin/class-payzen-subscribers-api-settings.php:137
+#: plugins/payzen-subscribers/public/partials/payzen-subscribers-form-registration.php:75
+#: themes/twentytwentyone/payzen-subscribers/public/partials/payzen-subscribers-form-registration.php:75
+msgid "Login"
+msgstr "Pseudo"
+
+#: plugins/payzen-subscribers/admin/class-payzen-subscribers-api-settings.php:144
+msgid "Test password"
+msgstr "Mot de passe de test"
+
+#: plugins/payzen-subscribers/admin/class-payzen-subscribers-api-settings.php:151
+msgid "Production password"
+msgstr "Mot de passe de production"
+
+#: plugins/payzen-subscribers/admin/class-payzen-subscribers-api-settings.php:158
+msgid "Payzen server url"
+msgstr "Url du serveur payzen"
+
+#: plugins/payzen-subscribers/admin/class-payzen-subscribers-api-settings.php:171
+msgid "Javascript key"
+msgstr "Clé javascript"
+
+#: plugins/payzen-subscribers/admin/class-payzen-subscribers-api-settings.php:184
+msgid "Hash key test"
+msgstr "Clé hash de test"
+
+#: plugins/payzen-subscribers/admin/class-payzen-subscribers-api-settings.php:191
+msgid "Hash key production"
+msgstr "Clé hash de production"
+
+#: plugins/payzen-subscribers/admin/class-payzen-subscribers-api-settings.php:204
+msgid "REST Api key"
+msgstr "Clé de l'API REST"
+
+#: plugins/payzen-subscribers/admin/class-payzen-subscribers-api-settings.php:220
+msgid "Enter the parameters of your PayZen REST API."
+msgstr "Reportez les paramètres de votre API REST PayZen."
+
+#: plugins/payzen-subscribers/admin/class-payzen-subscribers-api-settings.php:244
+msgid "red pill"
+msgstr ""
+
+#: plugins/payzen-subscribers/admin/class-payzen-subscribers-api-settings.php:247
+msgid "blue pill"
+msgstr ""
+
+#: plugins/payzen-subscribers/admin/class-payzen-subscribers-api-settings.php:251
+msgid ""
+"You take the blue pill and the story ends. You wake in your bed and you "
+"believe whatever you want to believe."
+msgstr ""
+
+#: plugins/payzen-subscribers/admin/class-payzen-subscribers-api-settings.php:254
+msgid ""
+"You take the red pill and you stay in Wonderland and I show you how deep the "
+"rabbit-hole goes."
+msgstr ""
+
+#: plugins/payzen-subscribers/admin/class-payzen-subscribers-api-settings.php:274
+msgid "Settings Saved"
+msgstr "Paramètres sauvegardés"
+
+#: plugins/payzen-subscribers/admin/class-payzen-subscribers-api-settings.php:290
+msgid "Save"
+msgstr "Sauvegarder"
+
+#: plugins/payzen-subscribers/admin/class-payzen-subscribers-subscriptions-plans.php:37
+#, php-format
+msgid "Items deleted: %d"
+msgstr ""
+
+#: plugins/payzen-subscribers/admin/class-payzen-subscribers-subscriptions-plans.php:46
+msgid "Parameters list subscriptions"
+msgstr ""
+
+#: plugins/payzen-subscribers/admin/class-payzen-subscribers-subscriptions-plans.php:99
+#: plugins/payzen-subscribers/admin/class-payzen-subscribers-subscriptions-plans.php:104
+msgid "Saved"
+msgstr "Sauvegardé"
+
+#: plugins/payzen-subscribers/admin/class-payzen-subscribers-subscriptions-plans.php:127
+#: plugins/payzen-subscribers/admin/class-payzen-subscribers-subscriptions-plans.php:133
+msgid "Item not found"
+msgstr ""
+
+#: plugins/payzen-subscribers/admin/class-payzen-subscribers-subscriptions-plans.php:138
+msgid "Settings"
+msgstr "Paramètres"
+
+#: plugins/payzen-subscribers/admin/class-payzen-subscribers-subscriptions-plans.php:139
+msgid "Settings emails"
+msgstr "Paramètres des emails"
+
+#: plugins/payzen-subscribers/admin/class-payzen-subscribers-subscriptions-plans.php:176
+#: plugins/payzen-subscribers/admin/class-payzen-subscribers-widget-subscribe-form.php:44
+msgid "Id"
+msgstr ""
+
+#: plugins/payzen-subscribers/admin/class-payzen-subscribers-subscriptions-plans.php:184
+#: plugins/payzen-subscribers/admin/class-payzen-subscribers-subscriptions-plans.php:381
+msgid "Title"
+msgstr "Titre"
+
+#: plugins/payzen-subscribers/admin/class-payzen-subscribers-subscriptions-plans.php:192
+#: plugins/payzen-subscribers/admin/class-payzen-subscribers-subscriptions-plans.php:382
+msgid "Description"
+msgstr "Déscription"
+
+#: plugins/payzen-subscribers/admin/class-payzen-subscribers-subscriptions-plans.php:200
+#: plugins/payzen-subscribers/admin/class-payzen-subscribers-subscriptions-plans.php:383
+msgid "Amount"
+msgstr "Prix"
+
+#: plugins/payzen-subscribers/admin/class-payzen-subscribers-subscriptions-plans.php:208
+msgid "Payment method"
+msgstr "Méthode de paiement"
+
+#: plugins/payzen-subscribers/admin/class-payzen-subscribers-subscriptions-plans.php:224
+#: plugins/payzen-subscribers/admin/class-payzen-subscribers-subscriptions-plans.php:384
+msgid "Frequency"
+msgstr "Fréquence"
+
+#: plugins/payzen-subscribers/admin/class-payzen-subscribers-subscriptions-plans.php:240
+msgid "Period"
+msgstr "Période"
+
+#: plugins/payzen-subscribers/admin/class-payzen-subscribers-subscriptions-plans.php:244
+msgid "Inscription date"
+msgstr "Date d'inscription"
+
+#: plugins/payzen-subscribers/admin/class-payzen-subscribers-subscriptions-plans.php:249
+msgid "First day of the period"
+msgstr ""
+
+#: plugins/payzen-subscribers/admin/class-payzen-subscribers-subscriptions-plans.php:275
+msgid "Day(s) sending before expiration"
+msgstr "Jour(s) d'envoi avant expiration"
+
+#: plugins/payzen-subscribers/admin/class-payzen-subscribers-subscriptions-plans.php:283
+msgid "Email sender"
+msgstr "E-mail d'envoi"
+
+#: plugins/payzen-subscribers/admin/class-payzen-subscribers-subscriptions-plans.php:291
+msgid "Subject"
+msgstr "Objet"
+
+#: plugins/payzen-subscribers/admin/class-payzen-subscribers-subscriptions-plans.php:299
+msgid "Message"
+msgstr "Message"
+
+#: plugins/payzen-subscribers/admin/class-payzen-subscribers-subscriptions-plans.php:358
+msgid "Modifier"
+msgstr ""
+
+#: plugins/payzen-subscribers/admin/class-payzen-subscribers-subscriptions-plans.php:359
+msgid "Delete"
+msgstr ""
+
+#: plugins/payzen-subscribers/admin/class-payzen-subscribers-subscriptions-plans.php:380
+msgid "id"
+msgstr ""
+
+#: plugins/payzen-subscribers/admin/class-payzen-subscribers-user-settings.php:42
+msgid "Your informations"
+msgstr "Vos informations"
+
+#: plugins/payzen-subscribers/admin/class-payzen-subscribers-user-settings.php:43
+msgid "Receive newsletter"
+msgstr "Recevoir la newsletter"
+
+#: plugins/payzen-subscribers/admin/class-payzen-subscribers-widget-account.php:21
+#: plugins/payzen-subscribers/public/class-payzen-subscribers-widget-account.php:302
+msgid "Payzen account"
+msgstr "Compte Payzen"
+
+#: plugins/payzen-subscribers/admin/class-payzen-subscribers-widget-account.php:36
+#: plugins/payzen-subscribers/admin/class-payzen-subscribers-widget-subscribe-form.php:42
+msgid "To display widget by schortcode"
+msgstr ""
+
+#: plugins/payzen-subscribers/admin/class-payzen-subscribers-widget-account.php:69
+#: plugins/payzen-subscribers/admin/class-payzen-subscribers-widget-account.php:89
+#: plugins/payzen-subscribers/public/class-payzen-subscribers-widget-account.php:197
+#: plugins/payzen-subscribers/public/class-payzen-subscribers-widget-account.php:217
+#: themes/twentytwentyone/payzen-subscribers/public/class-payzen-subscribers-widget-account.php:197
+#: themes/twentytwentyone/payzen-subscribers/public/class-payzen-subscribers-widget-account.php:217
+msgid "Your informations plan"
+msgstr "Informations sur mon abonnement"
+
+#: plugins/payzen-subscribers/admin/class-payzen-subscribers-widget-account.php:72
+#: plugins/payzen-subscribers/admin/class-payzen-subscribers-widget-account.php:92
+#: plugins/payzen-subscribers/public/class-payzen-subscribers-widget-account.php:200
+#: plugins/payzen-subscribers/public/class-payzen-subscribers-widget-account.php:220
+#: themes/twentytwentyone/payzen-subscribers/public/class-payzen-subscribers-widget-account.php:200
+#: themes/twentytwentyone/payzen-subscribers/public/class-payzen-subscribers-widget-account.php:220
+msgid "Is valid plan"
+msgstr "L'abonnement est valide"
+
+#: plugins/payzen-subscribers/admin/class-payzen-subscribers-widget-account.php:72
+#: plugins/payzen-subscribers/admin/class-payzen-subscribers-widget-account.php:92
+#: plugins/payzen-subscribers/public/class-payzen-subscribers-widget-account.php:200
+#: plugins/payzen-subscribers/public/class-payzen-subscribers-widget-account.php:220
+#: themes/twentytwentyone/payzen-subscribers/public/class-payzen-subscribers-widget-account.php:200
+#: themes/twentytwentyone/payzen-subscribers/public/class-payzen-subscribers-widget-account.php:220
+msgid "Is not valid plan"
+msgstr "L'abonnement n'est pas valide"
+
+#: plugins/payzen-subscribers/admin/class-payzen-subscribers-widget-account.php:75
+#: plugins/payzen-subscribers/public/class-payzen-subscribers-widget-account.php:203
+#: themes/twentytwentyone/payzen-subscribers/public/class-payzen-subscribers-widget-account.php:203
+msgid "Subscription plan"
+msgstr "Abonnement"
+
+#: plugins/payzen-subscribers/admin/class-payzen-subscribers-widget-account.php:76
+#: plugins/payzen-subscribers/public/class-payzen-subscribers-widget-account.php:204
+#: themes/twentytwentyone/payzen-subscribers/public/class-payzen-subscribers-widget-account.php:204
+msgid "Subscription date"
+msgstr "Date de souscription"
+
+#: plugins/payzen-subscribers/admin/class-payzen-subscribers-widget-account.php:77
+#: plugins/payzen-subscribers/public/class-payzen-subscribers-widget-account.php:205
+#: themes/twentytwentyone/payzen-subscribers/public/class-payzen-subscribers-widget-account.php:205
+msgid "Payzen subscription ID"
+msgstr "ID de souscription Payzen"
+
+#: plugins/payzen-subscribers/admin/class-payzen-subscribers-widget-account.php:78
+#: plugins/payzen-subscribers/public/class-payzen-subscribers-widget-account.php:206
+#: themes/twentytwentyone/payzen-subscribers/public/class-payzen-subscribers-widget-account.php:206
+msgid "Token ID"
+msgstr ""
+
+#: plugins/payzen-subscribers/admin/class-payzen-subscribers-widget-account.php:79
+#: plugins/payzen-subscribers/public/class-payzen-subscribers-widget-account.php:207
+#: themes/twentytwentyone/payzen-subscribers/public/class-payzen-subscribers-widget-account.php:207
+msgid "Card brand"
+msgstr "Marque de la carte"
+
+#: plugins/payzen-subscribers/admin/class-payzen-subscribers-widget-account.php:80
+#: plugins/payzen-subscribers/public/class-payzen-subscribers-widget-account.php:208
+#: themes/twentytwentyone/payzen-subscribers/public/class-payzen-subscribers-widget-account.php:208
+msgid "Card number"
+msgstr "Numéro de carte"
+
+#: plugins/payzen-subscribers/admin/class-payzen-subscribers-widget-account.php:81
+#: plugins/payzen-subscribers/public/class-payzen-subscribers-widget-account.php:209
+#: themes/twentytwentyone/payzen-subscribers/public/class-payzen-subscribers-widget-account.php:209
+msgid "Card expiration month"
+msgstr "Mois d'expiration de la carte"
+
+#: plugins/payzen-subscribers/admin/class-payzen-subscribers-widget-account.php:82
+#: plugins/payzen-subscribers/public/class-payzen-subscribers-widget-account.php:210
+#: themes/twentytwentyone/payzen-subscribers/public/class-payzen-subscribers-widget-account.php:210
+msgid "Card expiration year"
+msgstr "Année d'expiration de la carte"
+
+#: plugins/payzen-subscribers/includes/class-payzen-subscribers-cron.php:24
+msgid "Once every 1 minute"
+msgstr ""
+
+#: plugins/payzen-subscribers/includes/class-payzen-subscribers-cron.php:29
+msgid "Once every 10 minutes"
+msgstr ""
+
+#: plugins/payzen-subscribers/includes/class-payzen-subscribers-cron.php:34
+msgid "Once every 30 minutes"
+msgstr ""
+
+#: plugins/payzen-subscribers/includes/class-payzen-subscribers-cron.php:39
+msgid "Once every day"
+msgstr ""
+
+#: plugins/payzen-subscribers/includes/class-payzen-subscribers-utils.php:503
+msgid "YEARLY"
+msgstr "ANNUEL"
+
+#: plugins/payzen-subscribers/includes/class-payzen-subscribers-utils.php:505
+msgid "MONTHLY"
+msgstr "MENSUEL"
+
+#: plugins/payzen-subscribers/includes/class-payzen-subscribers-utils.php:507
+msgid "WHEEKLY"
+msgstr "HEBDOMADAIRE"
+
+#: plugins/payzen-subscribers/includes/forms/class-payzen-subscribers-widget-account-form.php:34
+msgid "No user match"
+msgstr "Aucun utilisateur trouvé"
+
+#: plugins/payzen-subscribers/includes/forms/class-payzen-subscribers-widget-account-form.php:36
+#: plugins/payzen-subscribers/includes/forms/class-payzen-subscribers-widget-payment-form.php:76
+msgid "Password does not match"
+msgstr "Les mots de passes ne sont pas identiques"
+
+#: plugins/payzen-subscribers/includes/forms/class-payzen-subscribers-widget-payment-form.php:57
+msgid "Required form field is missing"
+msgstr ""
+
+#: plugins/payzen-subscribers/includes/forms/class-payzen-subscribers-widget-payment-form.php:61
+msgid "Username too short. At least 4 characters is required"
+msgstr ""
+
+#: plugins/payzen-subscribers/includes/forms/class-payzen-subscribers-widget-payment-form.php:65
+msgid "Sorry, that login already exists!"
+msgstr "Désolé, le pseudo est déjà utilisé!"
+
+#: plugins/payzen-subscribers/includes/forms/class-payzen-subscribers-widget-payment-form.php:68
+msgid "Sorry, the username you entered is not valid"
+msgstr ""
+
+#: plugins/payzen-subscribers/includes/forms/class-payzen-subscribers-widget-payment-form.php:72
+msgid "Password length must be greater than 5"
+msgstr "Le mot de passe doit contenir plus de 5 caractères"
+
+#: plugins/payzen-subscribers/includes/forms/class-payzen-subscribers-widget-payment-form.php:80
+msgid "Email is not valid"
+msgstr "Cet Email n'est pas valide"
+
+#: plugins/payzen-subscribers/includes/forms/class-payzen-subscribers-widget-payment-form.php:84
+msgid "Email Already in use"
+msgstr "Cet Email est déjà utilisé"
+
+#: plugins/payzen-subscribers/includes/forms/class-payzen-subscribers-widget-payment-form.php:88
+msgid "Emails do not match"
+msgstr "Mauvais E-mail"
+
+#: plugins/payzen-subscribers/payzen-subscribers.php:191
+#: plugins/payzen-subscribers/payzen-subscribers.php:236
+msgid "Payzen informations"
+msgstr "Paramètres de Payzen"
+
+#: plugins/payzen-subscribers/payzen-subscribers.php:195
+#: plugins/payzen-subscribers/payzen-subscribers.php:240
+msgid "Year of birth"
+msgstr ""
+
+#: plugins/payzen-subscribers/payzen-subscribers.php:195
+msgid "(required)"
+msgstr ""
+
+#: plugins/payzen-subscribers/payzen-subscribers.php:215
+msgid "<strong>ERROR</strong>: Please enter your year of birth."
+msgstr ""
+
+#: plugins/payzen-subscribers/payzen-subscribers.php:219
+msgid "<strong>ERROR</strong>: You must be born after 1900."
+msgstr ""
+
+#: plugins/payzen-subscribers/public/class-payzen-subscribers-public.php:98
+msgid "Are you sure ?"
+msgstr "Validez-vous cette action ?"
+
+#: plugins/payzen-subscribers/public/class-payzen-subscribers-widget-account.php:102
+#: themes/twentytwentyone/payzen-subscribers/public/class-payzen-subscribers-widget-account.php:102
+msgid "Card expired"
+msgstr ""
+
+#: plugins/payzen-subscribers/public/class-payzen-subscribers-widget-account.php:117
+#: themes/twentytwentyone/payzen-subscribers/public/class-payzen-subscribers-widget-account.php:117
+msgid "Username / email"
+msgstr "Pseudo / E-mail"
+
+#: plugins/payzen-subscribers/public/class-payzen-subscribers-widget-account.php:121
+#: plugins/payzen-subscribers/public/partials/payzen-subscribers-form-registration.php:88
+#: themes/twentytwentyone/payzen-subscribers/public/class-payzen-subscribers-widget-account.php:121
+#: themes/twentytwentyone/payzen-subscribers/public/partials/payzen-subscribers-form-registration.php:88
+msgid "Password"
+msgstr "Mot de passe"
+
+#: plugins/payzen-subscribers/public/class-payzen-subscribers-widget-account.php:126
+#: themes/twentytwentyone/payzen-subscribers/public/class-payzen-subscribers-widget-account.php:126
+msgid "Log in"
+msgstr "Se connecter"
+
+#: plugins/payzen-subscribers/public/class-payzen-subscribers-widget-account.php:235
+#: themes/twentytwentyone/payzen-subscribers/public/class-payzen-subscribers-widget-account.php:237
+msgid "Update my bank card"
+msgstr "Mettre à jour ma carte bancaire"
+
+#: plugins/payzen-subscribers/public/class-payzen-subscribers-widget-account.php:246
+#: themes/twentytwentyone/payzen-subscribers/public/class-payzen-subscribers-widget-account.php:248
+msgid "Logout"
+msgstr "Déconnexion"
+
+#: plugins/payzen-subscribers/public/class-payzen-subscribers-widget-account.php:256
+#: themes/twentytwentyone/payzen-subscribers/public/class-payzen-subscribers-widget-account.php:258
+msgid "Get invoices"
+msgstr "Mes factures"
+
+#: plugins/payzen-subscribers/public/class-payzen-subscribers-widget-account.php:266
+#: plugins/payzen-subscribers/public/partials/payzen-subscribers-account.php:90
+#: themes/twentytwentyone/payzen-subscribers/public/class-payzen-subscribers-widget-account.php:268
+#: themes/twentytwentyone/payzen-subscribers/public/partials/payzen-subscribers-account.php:90
+msgid "Invoice"
+msgstr "Facture"
+
+#: plugins/payzen-subscribers/public/class-payzen-subscribers-widget-account.php:280
+#: themes/twentytwentyone/payzen-subscribers/public/class-payzen-subscribers-widget-account.php:282
+msgid "Close my account"
+msgstr "Résilier mon abonnement"
+
+#: plugins/payzen-subscribers/public/class-payzen-subscribers-widget-account.php:290
+#: themes/twentytwentyone/payzen-subscribers/public/class-payzen-subscribers-widget-account.php:292
+msgid "Remove my account"
+msgstr "Supprimer mon compte"
+
+#: plugins/payzen-subscribers/public/class-payzen-subscribers-widget-account.php:331
+#: themes/twentytwentyone/payzen-subscribers/public/class-payzen-subscribers-widget-account.php:333
+msgid "Go back"
+msgstr "Retour"
+
+#: plugins/payzen-subscribers/public/class-payzen-subscribers-widget-subscribe-form.php:132
+#: themes/twentytwentyone/payzen-subscribers/public/class-payzen-subscribers-widget-subscribe-form.php:132
+msgid "They are already plan for this user"
+msgstr ""
+
+#: plugins/payzen-subscribers/public/partials/payzen-subscribers-account.php:57
+#: themes/twentytwentyone/payzen-subscribers/public/partials/payzen-subscribers-account.php:57
+msgid "Bank direct debit"
+msgstr "Prélèvement bancaire"
+
+#: plugins/payzen-subscribers/public/partials/payzen-subscribers-form-registration.php:53
+#: themes/twentytwentyone/payzen-subscribers/public/partials/payzen-subscribers-form-registration.php:53
+msgid "Choose your payment method"
+msgstr "Choisissez votre mode de paiement"
+
+#: plugins/payzen-subscribers/public/partials/payzen-subscribers-form-registration.php:77
+#: themes/twentytwentyone/payzen-subscribers/public/partials/payzen-subscribers-form-registration.php:77
+msgid "Login is require<br class=\"display\">"
+msgstr "Le pseudo est requis<br class=\"display\">"
+
+#: plugins/payzen-subscribers/public/partials/payzen-subscribers-form-registration.php:78
+#: themes/twentytwentyone/payzen-subscribers/public/partials/payzen-subscribers-form-registration.php:78
+msgid ""
+"Please note: your username allows you to connect to the site and is also "
+"used as a name when you leave comments."
+msgstr ""
+"Attention: votre identifiant vous permet de vous connecter au site et sert "
+"également de nom lorsque vous laissez des commentaires."
+
+#: plugins/payzen-subscribers/public/partials/payzen-subscribers-form-registration.php:90
+#: themes/twentytwentyone/payzen-subscribers/public/partials/payzen-subscribers-form-registration.php:90
+msgid "Password is require"
+msgstr "Le mot de passe est requis"
+
+#: plugins/payzen-subscribers/public/partials/payzen-subscribers-form-registration.php:97
+#: themes/twentytwentyone/payzen-subscribers/public/partials/payzen-subscribers-form-registration.php:97
+msgid "Password confirmation"
+msgstr "Mot de passe de confirmation"
+
+#: plugins/payzen-subscribers/public/partials/payzen-subscribers-form-registration.php:99
+#: themes/twentytwentyone/payzen-subscribers/public/partials/payzen-subscribers-form-registration.php:99
+msgid "Password confirmation is require"
+msgstr "Le mot de passe de confirmation est requis"
+
+#: plugins/payzen-subscribers/public/partials/payzen-subscribers-form-registration.php:106
+#: themes/twentytwentyone/payzen-subscribers/public/partials/payzen-subscribers-form-registration.php:106
+msgid "Email"
+msgstr "E-mail"
+
+#: plugins/payzen-subscribers/public/partials/payzen-subscribers-form-registration.php:108
+#: themes/twentytwentyone/payzen-subscribers/public/partials/payzen-subscribers-form-registration.php:108
+msgid "Email is require"
+msgstr "L'e-mail est requis"
+
+#: plugins/payzen-subscribers/public/partials/payzen-subscribers-form-registration.php:116
+#: themes/twentytwentyone/payzen-subscribers/public/partials/payzen-subscribers-form-registration.php:116
+msgid "Email confirmation"
+msgstr "E-mail de confirmation"
+
+#: plugins/payzen-subscribers/public/partials/payzen-subscribers-form-registration.php:118
+#: themes/twentytwentyone/payzen-subscribers/public/partials/payzen-subscribers-form-registration.php:118
+msgid "Email confirmation is require"
+msgstr "L'e-mail de confirmation est requis"
+
+#: plugins/payzen-subscribers/public/partials/payzen-subscribers-form-registration.php:125
+#: themes/twentytwentyone/payzen-subscribers/public/partials/payzen-subscribers-form-registration.php:125
+msgid "First Name"
+msgstr "Prénom"
+
+#: plugins/payzen-subscribers/public/partials/payzen-subscribers-form-registration.php:129
+#: themes/twentytwentyone/payzen-subscribers/public/partials/payzen-subscribers-form-registration.php:129
+msgid "Last Name"
+msgstr "Nom"
+
+#: plugins/payzen-subscribers/public/partials/payzen-subscribers-form-registration.php:133
+#: themes/twentytwentyone/payzen-subscribers/public/partials/payzen-subscribers-form-registration.php:133
+msgid "Required fields"
+msgstr "Champs obligatoires"
+
+#: plugins/payzen-subscribers/public/partials/payzen-subscribers-form-registration.php:137
+#: themes/twentytwentyone/payzen-subscribers/public/partials/payzen-subscribers-form-registration.php:137
+#, php-format
+msgid "I agree to receive %s's newsletter and alerts."
+msgstr "J’accepte de recevoir de %s, la newsletter et les alertes."
+
+#: plugins/payzen-subscribers/public/partials/payzen-subscribers-form-registration.php:141
+#: themes/twentytwentyone/payzen-subscribers/public/partials/payzen-subscribers-form-registration.php:141
+msgid ""
+"I have read and accept the General Conditions of Sale and Use (1) and the "
+"Comments Charter (2)"
+msgstr ""
+"J'ai lu et j'accepte les Conditions Générales de Vente et d'Utilisation (1) "
+"et la Charte des commentaires (2)"
+
+#: plugins/payzen-subscribers/public/partials/payzen-subscribers-form-registration.php:145
+#: themes/twentytwentyone/payzen-subscribers/public/partials/payzen-subscribers-form-registration.php:145
+msgid "Download the General Conditions of Sale and Use"
+msgstr "Téléchargez les Conditions Générales de Vente et d'Utilisation"
+
+#: plugins/payzen-subscribers/public/partials/payzen-subscribers-form-registration.php:148
+#: themes/twentytwentyone/payzen-subscribers/public/partials/payzen-subscribers-form-registration.php:148
+msgid "Download the comments charter"
+msgstr "Téléchargez la Charte des commentaires"
+
+#: plugins/payzen-subscribers/public/partials/payzen-subscribers-form-registration.php:175
+#: themes/twentytwentyone/payzen-subscribers/public/partials/payzen-subscribers-form-registration.php:175
+msgid "You already have a plan"
+msgstr "Vous avez déjà un compte"
+
+#: plugins/payzen-subscribers/public/partials/payzen-subscribers-public-display.php:25
+#: themes/twentytwentyone/payzen-subscribers/public/partials/payzen-subscribers-public-display.php:25
+msgid "Choose a plan"
+msgstr "Choisissez votre formule"
+
+#: plugins/payzen-subscribers/public/partials/payzen-subscribers-public-display.php:33
+#: themes/twentytwentyone/payzen-subscribers/public/partials/payzen-subscribers-public-display.php:43
+msgid "Create your account"
+msgstr "Créez votre compte"
+
+#: plugins/payzen-subscribers/public/partials/payzen-subscribers-public-display.php:43
+#: themes/twentytwentyone/payzen-subscribers/public/partials/payzen-subscribers-public-display.php:53
+msgid "Submit"
+msgstr "Envoyer"
+
+#: plugins/payzen-subscribers/public/partials/payzen-subscribers-public-display.php:63
+#: themes/twentytwentyone/payzen-subscribers/public/partials/payzen-subscribers-public-display.php:73
+msgid "Create payment form"
+msgstr "Formulaire de paiement sécurisé"
+
+#: plugins/payzen-subscribers/public/partials/payzen-subscribers-public-display.php:88
+#: themes/twentytwentyone/payzen-subscribers/public/partials/payzen-subscribers-public-display.php:98
+msgid "Create token"
+msgstr ""
+
+#: themes/twentytwentyone/payzen-subscribers/public/class-payzen-subscribers-widget-account.php:304
+msgid "Guyaweb account"
+msgstr "Compte Guyaweb"
+
+#~ msgid "Passwords do not match"
+#~ msgstr "Les mots de passes ne sont pas identiques"
+
+#~ msgid ""
+#~ "Please note: your username allows you to connect to the site and is also "
+#~ "used as a name when you leave comments.<br class=\"display\">\n"
+#~ "NB: The maximum number of characters is fixed at 50."
+#~ msgstr ""
+#~ "Attention: votre identifiant vous permet de vous connecter au site et "
+#~ "sert également de nom lorsque vous laissez des commentaires.<br class="
+#~ "\"display\">\n"
+#~ "NB: le nombre maximum de caractères est fixé à 50."
+
+#~ msgid "Change payment"
+#~ msgstr "Changer votre moyen de paiement"
+
+#~ msgid "Remove wordpress account"
+#~ msgstr "Supprimer votre compte Wordpress"
+
+#~ msgid "Month"
+#~ msgstr "Mois"
+
+#~ msgid "Payzen account Guyaweb"
+#~ msgstr "Compte Guyaweb"
+
+#, fuzzy
+#~| msgid "Payzen account"
+#~ msgid "Widget account"
+#~ msgstr "Compte Payzen"
+
+#~ msgid "Renewal of payment method"
+#~ msgstr "Renouvellement du mode de paiement"
+
+#~ msgid "Username"
+#~ msgstr "Utilisateur"
+
+#~ msgid "User"
+#~ msgstr "Utilisateur"
+
+#~ msgid "Settings Payzen API"
+#~ msgstr "Paramètres de l'API PayZen"
+
+#~ msgid "Plugin parameters"
+#~ msgstr "Paramètres du plugin"
