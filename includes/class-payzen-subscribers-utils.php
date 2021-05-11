@@ -358,7 +358,6 @@ function getRandomString($n) {
  */
 function isValidPlan(): bool
 {
-    convertOldGuyawebAccount();
     global $informationAccountErrors;
 
     if(isCardExpired()){
