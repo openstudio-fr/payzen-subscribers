@@ -21,4 +21,8 @@ This plugin does :
    - Change user if subscribed or not
    - Change payment method
    - Display invoices
+  
+== Installation ==
+- get last release and unzip into plugins folder
+- Go to worpdress backoffice and active this extension
 
