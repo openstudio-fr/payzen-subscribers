@@ -290,7 +290,11 @@ function postVadsParams(): array
     $params = array();
     foreach ($_POST as $key => $param){
         if(strpos( $key, 'vads' ) !== false ){
-            $params[$key] = $param;
+            if($key === 'vads_brand_management'){
+                $params[$key] = stripslashes($param);
+            } else {
+                $params[$key] = $param;
+            }
         }
     }
     return $params;

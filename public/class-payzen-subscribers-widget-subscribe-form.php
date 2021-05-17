@@ -87,19 +87,21 @@ class Payzen_Subscribers_Widget_Subscribe_Form_Pub
                         throw new Exception(__('They are already plan for this user','payzen-subscribers'));
                     }
 
-                    $response = Payzen_Subscribers_Widget_Subscribe_Form_Pub::getSubscription();
+                    //is PAID so create invoice
+                    $krAnswer = json_decode(stripslashes($_POST['kr-answer']), true);
+                    plugin_log(['storeUserInvoices' =>
+                        [
+                            'user_email'    => wp_get_current_user()->user_email,
+                            'userId'        => get_current_user_id(),
+                            'orderDetails'  => $krAnswer['orderDetails'],
+                            'Response'      => 'isPayzenApiResponse',
+                            'POST'          => $_POST
+                        ]
+                    ]);
+                    storeUserInvoices($krAnswer['orderDetails']);
+
+                    $response = Payzen_Subscribers_Widget_Subscribe_Form_Pub::createSubscription();
                     if ($response['status'] === 'SUCCESS') {
-                        //is PAID so create invoice
-                        $krAnswer = json_decode(stripslashes($_POST['kr-answer']), true);
-                        plugin_log(['storeUserInvoices' =>
-                            [
-                                'user_email'    => wp_get_current_user()->user_email,
-                                'userId'        => get_current_user_id(),
-                                'orderDetails'  => $krAnswer['orderDetails'],
-                                'Response'      => 'isPayzenApiResponse'
-                            ]
-                        ]);
-                        storeUserInvoices($krAnswer['orderDetails']);
 
                         $subscriptionId = $response['answer']['subscriptionId'];
                         /** Store subscriptionId into wp user meta */
@@ -206,7 +208,6 @@ class Payzen_Subscribers_Widget_Subscribe_Form_Pub
                         wp_set_current_user($wp_user->ID, $wp_user->user_login);
                     }
                     if( $_POST['vads_trans_status'] === 'CANCELLED' ||
-                        $_POST['vads_trans_status'] === 'ABANDONED' ||
                         $_POST['vads_trans_status'] === 'REFUSED')
                     { //Remove payment
                         //Remove payzen subscription
@@ -248,12 +249,39 @@ class Payzen_Subscribers_Widget_Subscribe_Form_Pub
                         }
                     } elseif ($_POST['vads_trans_status'] === 'AUTHORISED') {
                         storeUserTransaction($_POST['vads_trans_uuid']);
-                        $response = Payzen_Subscribers_Widget_Subscribe_Form_Pub::getSubscription();
-                        if ($response['status'] === 'SUCCESS') {
-                            //is PAID so create invoice
+                        //If new subscription
+                        if(empty(getUserMeta('paysubs_subscriptionId')[0])){
+                            $response = Payzen_Subscribers_Widget_Subscribe_Form_Pub::createSubscription();
+                            if ($response['status'] === 'SUCCESS') {
+                                //is PAID so create first invoice
+                                $transaction = Payzen_API::getTransaction($_POST['vads_trans_uuid']);
+                                $krAnswer = $transaction['answer'];
+                                plugin_log(['storeUserInvoices_IPN_new' =>
+                                    [
+                                        'userId'        => get_current_user_id(),
+                                        'orderDetails'  => $krAnswer['orderDetails'],
+                                        'Response'      => 'isIpnSddResponse'
+                                    ]
+                                ]);
+                                storeUserInvoices($krAnswer['orderDetails']);
+                                $subscriptionId = $response['answer']['subscriptionId'];
+                                /** Store subscriptionId into wp user meta */
+                                storeUserMeta('paysubs_subscriptionId', $subscriptionId);
+                                storeUserMeta('paysubs_subscriptionDate', getDate8601());
+                            }else{
+                                plugin_log(['ERROR_STATUS_IPN' =>
+                                    [
+                                        'userId'        => get_current_user_id(),
+                                        'Response'      => 'isIpnResponse',
+                                        'ERROR_STATUS'  => $_POST['vads_trans_status']
+                                    ]
+                                ]);
+                            }
+                        }else{ // Is renew subscription
+                            //is PAID so create one more invoice
                             $transaction = Payzen_API::getTransaction($_POST['vads_trans_uuid']);
                             $krAnswer = $transaction['answer'];
-                            plugin_log(['storeUserInvoices_IPN' =>
+                            plugin_log(['storeUserInvoices_IPN_renew' =>
                                 [
                                     'userId'        => get_current_user_id(),
                                     'orderDetails'  => $krAnswer['orderDetails'],
@@ -261,21 +289,8 @@ class Payzen_Subscribers_Widget_Subscribe_Form_Pub
                                 ]
                             ]);
                             storeUserInvoices($krAnswer['orderDetails']);
-                            $subscriptionId = $response['answer']['subscriptionId'];
-                            /** Store subscriptionId into wp user meta */
-                            storeUserMeta('paysubs_subscriptionId', $subscriptionId);
-                            storeUserMeta('paysubs_subscriptionDate', getDate8601());
-                        }else{
-                            plugin_log(['ERROR_STATUS_IPN' =>
-                                [
-                                    'userId'        => get_current_user_id(),
-                                    'Response'      => 'isIpnResponse',
-                                    'ERROR_STATUS'  => $_POST['vads_trans_status']
-                                ]
-                            ]);
                         }
                     }
-
                 }else{
                     throw new Exception('An error occurred while computing the signature');
                 }
@@ -291,7 +306,8 @@ class Payzen_Subscribers_Widget_Subscribe_Form_Pub
                     [
                         'user_email'        => $_POST['vads_cust_email'],
                         'message'           => $e->getMessage(),
-                        'POST'              => $_POST
+                        'POST'              => $_POST,
+                        'POST_strip'        => stripslashes($_POST)
                     ]
                 ]);
             }
@@ -346,7 +362,7 @@ class Payzen_Subscribers_Widget_Subscribe_Form_Pub
      * @return array
      * @throws \Lyra\Exceptions\LyraException
      */
-    public static function getSubscription(): array
+    public static function createSubscription(): array
     {
         $plan = new Payzen_Subscribers_Plan(getUserMeta('paysubs_plan')[0]);
         return $plan->createSubscriptionPlan(
